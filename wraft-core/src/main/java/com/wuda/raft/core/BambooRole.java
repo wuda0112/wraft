@@ -1,13 +1,11 @@
 package com.wuda.raft.core;
 
-import com.wuda.raft.fsm.State;
-
 /**
  * state space.
  *
  * @author wuda
  */
-public enum BambooRole implements State {
+public enum BambooRole {
 
     /**
      * follower.
@@ -36,12 +34,10 @@ public enum BambooRole implements State {
         this.description = description;
     }
 
-    @Override
     public String getName() {
         return name;
     }
 
-    @Override
     public String getDescription() {
         return description;
     }
